@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40DCF491D3CA5A4003A4A24 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DCF481D3CA5A4003A4A24 /* History.swift */; };
+		F40DCF4B1D3CA5E0003A4A24 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DCF4A1D3CA5E0003A4A24 /* HistoryViewController.swift */; };
 		F4C164491D30554200DE78D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C164481D30554200DE78D8 /* AppDelegate.swift */; };
 		F4C1644B1D30554200DE78D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1644A1D30554200DE78D8 /* ViewController.swift */; };
 		F4C1644E1D30554200DE78D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C1644C1D30554200DE78D8 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		F4C164531D30554200DE78D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C164511D30554200DE78D8 /* LaunchScreen.storyboard */; };
 		F4C1645E1D30554200DE78D8 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1645D1D30554200DE78D8 /* RoshamboTests.swift */; };
 		F4C164691D30554200DE78D8 /* RoshamboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C164681D30554200DE78D8 /* RoshamboUITests.swift */; };
+		F4C164771D30585900DE78D8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C164761D30585900DE78D8 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40DCF481D3CA5A4003A4A24 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F40DCF4A1D3CA5E0003A4A24 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F4C164451D30554200DE78D8 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C164481D30554200DE78D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C1644A1D30554200DE78D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		F4C164641D30554200DE78D8 /* RoshamboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C164681D30554200DE78D8 /* RoshamboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboUITests.swift; sourceTree = "<group>"; };
 		F4C1646A1D30554200DE78D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C164761D30585900DE78D8 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				F4C1644F1D30554200DE78D8 /* Assets.xcassets */,
 				F4C164511D30554200DE78D8 /* LaunchScreen.storyboard */,
 				F4C164541D30554200DE78D8 /* Info.plist */,
+				F4C164761D30585900DE78D8 /* ResultViewController.swift */,
+				F40DCF481D3CA5A4003A4A24 /* History.swift */,
+				F40DCF4A1D3CA5E0003A4A24 /* HistoryViewController.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					F4C164441D30554200DE78D8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 54N4S9E945;
 					};
 					F4C164581D30554200DE78D8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -258,6 +268,9 @@
 			files = (
 				F4C1644B1D30554200DE78D8 /* ViewController.swift in Sources */,
 				F4C164491D30554200DE78D8 /* AppDelegate.swift in Sources */,
+				F40DCF491D3CA5A4003A4A24 /* History.swift in Sources */,
+				F40DCF4B1D3CA5E0003A4A24 /* HistoryViewController.swift in Sources */,
+				F4C164771D30585900DE78D8 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +414,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Roshambo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatsupnow.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Roshambo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whatsupnow.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +505,7 @@
 				F4C1646F1D30554200DE78D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4C164701D30554200DE78D8 /* Build configuration list for PBXNativeTarget "RoshamboTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +514,7 @@
 				F4C164721D30554200DE78D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4C164731D30554200DE78D8 /* Build configuration list for PBXNativeTarget "RoshamboUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +523,7 @@
 				F4C164751D30554200DE78D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
